@@ -1,0 +1,23 @@
+@use './colors' as c;
+
+.logo{
+    border: 1px solid c.$ligth-100 ;
+    text-decoration: none;
+    font-size: 1.1875em;
+    padding: .625em;
+    color: c.$ligth-100;
+}
+
+@mixin btn-site($pg,$bgc,$c) {
+    outline: none;
+    border: none;
+    padding: $pg;
+    background-color: $bgc;
+    color: $c;
+    transition: .3s ease;
+    &:hover{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+}
+
