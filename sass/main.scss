@@ -8,6 +8,9 @@ h1,h2,h3,h4,h5,p{
         color: c.$grey-10;
     }
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .bg-header{
     margin-top: 5em;
@@ -17,22 +20,46 @@ h1,h2,h3,h4,h5,p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
+    display: flex;
 }
 
 .img-responsive{
-    width: 600px;
-    z-index: 3;
-
+    width: 400px;
     @media (max-width:765px) {
         width: 100%;
     }
 }
+
 .aboutMe{
     background-position: center;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-size:cover;
     width: 100%;
     height: 100vh;
-    background-image: url(../src/svg/bg-aboutMe.svg);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../src/circle.svg);
+}
+
+.animation-move{
+    animation: aniamtion-person 5s  reverse infinite;
+}
+
+@keyframes aniamtion-person {
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }
