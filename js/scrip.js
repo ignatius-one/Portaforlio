@@ -39,6 +39,6 @@ const typed = new Typed('.typed', {
 	loopCount: false,
 	showCursor: true,
 	cursorChar: '|', 
-	contentType: 'html', 
+    contentType: 'html',
 
 })

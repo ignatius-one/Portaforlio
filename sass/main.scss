@@ -2,16 +2,123 @@
 @use './frames';
 @use './nav';
 
-h1,h2,h3,h4,h5,p{
+
+
+
+.bubble{
+    border-radius: 50%;
+    background: c.$blue-100;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: bubbles 3s linear infinite ;
+}
+@mixin bubbless($width,$heigth,$left,$duration,$delay) {
+    width: $width;
+    height: $heigth;
+    left: $left;
+    animation-duration: $duration;
+    animation-delay: $delay;
+}
+.bubble:nth-child(1){
+    @include bubbless(80px,80px ,5% ,3s ,3s );
+}
+
+.bubble:nth-child(2){
+    @include bubbless(100px,100px ,35% ,3s ,5s );
+}
+
+.bubble:nth-child(3){
+    @include bubbless(20px,20px ,15% ,1.5s ,7s );
+}
+
+.bubble:nth-child(4){
+    @include bubbless(50px,50px ,90% ,6s ,3s );
+}
+
+.bubble:nth-child(5){
+    @include bubbless(70px,70px ,65% ,3s ,1s );
+}
+
+.bubble:nth-child(6){
+    @include bubbless(20px,20px ,50% ,4s ,5s );
+}
+
+.bubble:nth-child(7){
+    @include bubbless(20px,20px ,50% ,4s ,5s );
+}
+
+.bubble:nth-child(8){
+    @include bubbless(100px,100px ,52% ,5s ,5s );
+}
+
+.bubble:nth-child(9){
+    @include bubbless(65px,65px ,51% ,3s ,2s );
+}
+
+.bubble:nth-child(10){
+    @include bubbless(40px,40px ,35% ,3s ,4s );
+}
+
+
+@keyframes bubbles{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+
+// this is move img don't is necessary 
+@keyframes moves{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+h1,h2,h3,h4,h5{
     color: c.$grey-100;
     body.dark-active &{
         color: c.$grey-10;
     }
 }
+p{
+    color: c.$grey-90;
+    body.dark-active &{
+        color: c.$grey-10;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
-
+.btn-primary{
+    background-color: c.$blue-100;
+}
 .bg-header{
     margin-top: 5em;
     background-image: url(../src/svg/wave-haikei.svg);
@@ -42,8 +149,12 @@ html{
     justify-content: center;
     flex-direction: column;
     background-image: url(../src/circle.svg);
+    p{font-size: 1.25em;}
 }
 
+.animation-moveY{
+    animation: moves 5s reverse infinite;
+}
 .animation-move{
     animation: aniamtion-person 5s  reverse infinite;
 }
