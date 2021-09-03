@@ -11,7 +11,7 @@ document.getElementById('changes-icon').addEventListener('click', () => {
 let position = window.pageYOffset;
 let nav = document.getElementById('nav');
 window.addEventListener('scroll', function () {
-    if (screen.width < 927) {
+    if (screen.width < 929) {
        
     } else {
         adress = this.window.pageYOffset
@@ -33,7 +33,7 @@ document.getElementById('dark-mode').addEventListener('click', () => {
 
 // type.js
 const typed = new Typed('.typed', {
-    strings: ['  Developer Web',' Designer Web','Front end'],
+    strings: ['Developer Web',' Designer Web','or..','waiit!','aa yeaa','Front end','yes'],
     typeSpeed: 80,
     startDelay: 300,
 	backSpeed: 75, 
