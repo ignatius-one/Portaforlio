@@ -48,3 +48,98 @@
         color:c.$twitter;
     }
 }
+
+
+
+.LangugesPorcent{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    &::-webkit-progress-bar{
+        background-color: rgb(220, 228, 220);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    &::-webkit-progress-value{
+        background-color: rgb(81, 14, 144);
+    }
+    
+    
+}
+.html{
+        &::-webkit-progress-value{
+            background-color: c.$html;
+        }
+}
+.Css{
+        &::-webkit-progress-value{
+            background-color: c.$css;
+        }
+}
+.JavaScript{
+        &::-webkit-progress-value{
+            background-color: c.$js;
+        }
+}
+
+@mixin new-btn($colorb) {
+    margin-top: 50px;
+    width: 11.875em;
+    padding: .9em;
+    background-color: transparent;
+    border: 1.5px solid transparent;
+    color: $colorb;
+    border-radius: 4px;
+    text-transform: uppercase;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    position: relative;
+    font-size: 1em;
+    cursor: pointer;
+    &::after{
+        content: '';
+        width: 1.25em;
+        height: 1.25em;
+        border-top: .11875em solid $colorb;
+        border-left: .11875em solid $colorb;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        -webkit-transition: .2s all;
+        -o-transition: .2s all;
+        transition: .2s all;
+    }
+    &::before{
+        content: '';
+        width: 1.25em;
+        height: 1.25em;
+        border-bottom: .11875em solid $colorb;
+        border-right: .11875em solid $colorb;
+        position: absolute;
+        left: -1;
+        right: 0;
+        bottom: 0;
+        top: -1;
+        -webkit-transition: .2s all;
+        -o-transition: .2s all;
+        transition: .2s all;
+    }
+    &:hover::after,
+    &:hover::before{
+        width: 12.5em;
+        height: 4.375em;
+    }
+}
+
+.btn-submit{
+    @include new-btn(c.$ligth-100)
+}
+
+
+
+    

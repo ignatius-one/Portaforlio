@@ -8,17 +8,21 @@ document.getElementById('changes-icon').addEventListener('click', () => {
 })
 
 // hidden nav 
-// let position = window.pageYOffset;
-// let nav = document.getElementById('nav');
-// window.addEventListener('scroll', function () {
-//     adress = this.window.pageYOffset
-//     if (position >= adress) {
-//         nav.style.top = '0'
-//     } else {
-//         nav.style.top = '-5em'
-//     }
-//     position = adress
-// })
+let position = window.pageYOffset;
+let nav = document.getElementById('nav');
+window.addEventListener('scroll', function () {
+    if (screen.width < 927) {
+       
+    } else {
+        adress = this.window.pageYOffset
+        if (position >= adress) {
+            nav.style.top = '0'
+        } else {
+            nav.style.top = '-5em'
+        }
+        position = adress
+    }
+})
 
 
 // my dark mode 
@@ -40,5 +44,15 @@ const typed = new Typed('.typed', {
 	showCursor: true,
 	cursorChar: '|', 
     contentType: 'html',
-
 })
+
+
+
+// progress bars 
+// setInterval(() => {
+//    document.getElementsByTagName('progress')[0].value =
+//    document.getElementsByTagName('progress')[0].value + 1
+//    if (document.getElementsByTagName('progress')[0].value === 80) {
+//        document.getElementsByTagName('progress')[0].value = 1
+//     }
+// }, 250);

@@ -39,17 +39,15 @@
 </nav>
 
 <header >
-  <div class="bg-header">
     <div class="container pt-5 m-auto row ">
     <div class="col-12 col-md-5 ">
-    <h1>Hello i am Ignacio nice To meet you i am ...<span class="typed color-writing" > </span></h1>
+    <h1>Hello i am Ignacio, nice To meet you, i am ...<span class="typed color-writing" > </span></h1>
     <a  href="#aboutMe" class="mt-4 btn btn-primary fw-bold">About Me</a>
 </div>
     <div class="col-12 col-md-7 ">
         <img class="img-responsive" src="./src/svg/coding.svg"  alt="">
     </div>
     </div>
-</div>
 
 </header>
 
@@ -82,9 +80,9 @@
     <!-- bubbles efect  -->
 </section>
 
-<section id="AboutMore" data-aos="zoom-in-lef"  >
+<section id="AboutMore" class="mt-5" data-aos="zoom-in-lef"  >
   <div class="row card-container ">
-    <div class="col-12 col-md-4 card-perfil d-flex justify-content-center ">
+    <div class="col-12 col-md-4 card-perfil d-flex justify-content-center pt-5 pb-5 ">
        <div class="d-flex flex-column align-content-center align-items-center justify-content-center p-4">
     <div class="perfil d-flex flex-column align-items-center align-content-center">
           <img class="card-perfil-photo" src="./src/perfil.jpg" alt="" srcset="">
@@ -116,6 +114,10 @@
        </a>
          </div>
       </div>
+      <form enctype="text/plain" action="mailto:josegnacio118@gmail.com " method="POST">
+        <button class="btn-submit" type="submit" >Send Email</button>
+      
+      </form>
     </div>
           </div>
 
@@ -124,7 +126,7 @@
     <div class="col-12 col-md-8 card-perfil-info ">   
        
        <div class="row pt-5">
-              <div class="col-12 col-md-6 decriptions">
+              <div class="col-12  col-md-6 decriptions">
             <h2>About Ignacio</h2>
           <P >My name is Ignacio I have 18 years old I born Tamaulipas, Mexico always I interesting in the technology, Design, Personal Finance, Art and Music. I am an open person and autodidact, and I'm glad to face new challenges, all I learned is on my own I am not fluent in English yet, but I keep improving to learn another language like German or French</p>
           </div>
@@ -142,12 +144,25 @@
         </div>
         <div class="col-12 col-md-6">
           <h3>Projects</h3>
-          <p>View more scroll down </p>
+          <a href="#projects" class="btn btn-primary"> view</a>
         </div>
       </div> 
        <div class="row">
         <div class="col-12">
           <h3>Code Languages</h3>
+          <div class="d-flex align-content-center align-items-center">
+          <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
+          <progress class="LangugesPorcent html" value="80" max="100"></progress>
+          </div>
+          <div class="d-flex align-content-center align-items-center">
+            <img src="https://img.icons8.com/color/48/000000/css3.png"/>          
+            <progress class="LangugesPorcent Css" value="80" max="100"></progress>
+          </div>
+          <div class="d-flex align-content-center align-items-center">
+            <img src="https://img.icons8.com/color/50/000000/javascript--v2.png"/>         
+          <progress class="LangugesPorcent JavaScript" value="70" max="100"></progress>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -155,9 +170,9 @@
   </div>
 </section>
 
-<section id="skills" data-aos="zoom-in-up"  >
-  <div class="row  p-4">
-     <div class="col-12 col-md-6">
+<section id="skills" class="mt-5" data-aos="zoom-in-up"  >
+  <div class="container-fluid  row">
+      <div class="col-12 col-md-6"> 
       <h2>Skills</h2>
       <h5>Code Languages And Technologies </h5>
       <div class=" fw-bold ">Html 
@@ -185,9 +200,8 @@
       <div class=" fw-bold ">Npm
         <img src="https://img.icons8.com/color/48/000000/npm.png"/>
       </div>
-    </div> 
-
-     <div class="col-12 col-md-6 ">
+    </div>  
+      <div class="col-12 col-md-6 "> 
       <div class=" mt-2" >
         <h5>Responsive web</h5>
         <p> a design that responds to different screens and offers a great user experience</p>
@@ -203,12 +217,11 @@
         <p>A modern desing </p>
         <img class="img-fluid " style=" height: 6.25em;" src="./src/svgSkilss/Design.svg" alt="" srcset="">
       </div>
-    </div>
-  
-  </div>
+    </div>  
+ 
 </section> 
 
-<section class="projects-section"  id="projects" data-aos="zoom-in-right">
+ <section class="projects-section mt-5"  id="projects" data-aos="zoom-in-right">
   <h2 class="text-center">Projects</h2>
   <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -242,6 +255,7 @@
 </div>
   </div>
 </section>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
