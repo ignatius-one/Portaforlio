@@ -43,7 +43,7 @@ nav{
             transform: translateY(8px);
 
         }
-        @media (max-width:856px) {
+        @media (max-width:928px) {
             display: flex;
         }
     }
@@ -70,7 +70,7 @@ nav{
             &:hover{opacity: .8; transform: scale(.9);}
         } 
            
-        @media (max-width:856px) {
+        @media (max-width:928px) {
         position: fixed;
         flex-direction: column;
         justify-content: flex-start;
@@ -129,6 +129,7 @@ nav{
 
 
   body{
+      padding-top: 5em;
       transition: .6s ease all;
     &::-webkit-scrollbar{
        display: none;

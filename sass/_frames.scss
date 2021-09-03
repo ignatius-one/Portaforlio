@@ -29,31 +29,7 @@
         transform: scale(1.1);
     }
 }
-.card-personal{
-    background-color: c.$ligth-100;
-    display: flex;
-    flex-direction: column;
-    .card-perfil{
-        display: flex;
-        align-content: center;
-        align-items: center;
-        background-color: c.$grey-100;
-        width: 100%;
-        height: 50vh;
-        img{
-            margin-left: auto;
-            margin-right: auto;
-            height: 18.75em;
-            width: 18.75em;
-            border-radius: 60%;
-            object-fit: contain;
-            object-position: center;
-        }
-    }
-    body .dark-active{
-        background-color: c.$green-100;
-    }
-}
+
 
 // icons social media 
 .icon-social{

@@ -8,17 +8,17 @@ document.getElementById('changes-icon').addEventListener('click', () => {
 })
 
 // hidden nav 
-let position = window.pageYOffset;
-let nav = document.getElementById('nav');
-window.addEventListener('scroll', function () {
-    adress = this.window.pageYOffset
-    if (position >= adress) {
-        nav.style.top = '0'
-    } else {
-        nav.style.top = '-5em'
-    }
-    position = adress
-})
+// let position = window.pageYOffset;
+// let nav = document.getElementById('nav');
+// window.addEventListener('scroll', function () {
+//     adress = this.window.pageYOffset
+//     if (position >= adress) {
+//         nav.style.top = '0'
+//     } else {
+//         nav.style.top = '-5em'
+//     }
+//     position = adress
+// })
 
 
 // my dark mode 
