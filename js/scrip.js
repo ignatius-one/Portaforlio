@@ -29,7 +29,7 @@ document.getElementById('dark-mode').addEventListener('click', () => {
 
 // type.js
 const typed = new Typed('.typed', {
-    strings: ['cat'],
+    strings: ['  Developer Web',' Designer Web','Front end'],
     typeSpeed: 80,
     startDelay: 300,
 	backSpeed: 75, 
