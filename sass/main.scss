@@ -133,7 +133,9 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-   
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -182,10 +184,10 @@ header{
     
 }
 
-.container-section{
-    width: 100%;
-    height: 100vh;
-}
+// .container-section{
+//     width: 100%;
+//     height: 100vh;
+// }
 
 
 .card-container{
@@ -212,7 +214,7 @@ header{
 .img-opacity{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     border-radius: .9375em;
     overflow: hidden;
     &::after{
@@ -236,14 +238,21 @@ header{
     position: relative;
 }
 
-
-
-
-
-.svgs{
-    fill:c.$blue-100;
- body.dark-active &{
-        fill: c.$green-90;
+.section-100vh{
+    width: 100%;
+    height: 100vh;
+    @media (max-width:765px) {
+        height: auto;
     }
 }
+.section-items-center{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+
 
