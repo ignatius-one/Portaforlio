@@ -85,6 +85,7 @@
 }
 
 @mixin new-btn($colorb) {
+    text-decoration: none;
     outline: none;
     margin-top: 50px;
     width: 11.875em;
@@ -130,6 +131,9 @@
         -o-transition: .2s all;
         transition: .2s all;
     }
+    &:hover{
+        color: $colorb;
+    }
     &:hover::after,
     &:hover::before{
         width: 12.5em;
@@ -139,6 +143,24 @@
 
 .btn-submit{
     @include new-btn(c.$ligth-100)
+}
+.btn-view{
+    @include new-btn(c.$blue-100);
+    text-transform: lowercase;
+    padding: 7px;
+    &::after{
+        width: .4375em;
+        height: .4375em;
+    }
+    &::before{
+        width: .4375em;
+        height: .4375em;
+    }   
+    &:hover::after,
+    &:hover::before{
+        width: 2.875rem;
+        height: 2.875rem;
+    }
 }
 
 .border-skills{

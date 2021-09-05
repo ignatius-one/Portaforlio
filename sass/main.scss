@@ -91,8 +91,6 @@
         opacity: 0;
     }
 }
-
-
 // this is move img don't is necessary 
 @keyframes moves{
     0%{
@@ -105,10 +103,6 @@
         transform: translateY(0);
     }
 }
-
-
-
-
 
 h1,h2,h3,h4,h5{
     color: c.$grey-100;
@@ -190,27 +184,16 @@ header{
     
 }
 
-
-// .card-container{
-//     width: 100%;
-//     height: 100%;
-//     .card-perfil{
-//         background-color: c.$dark-100;
-//           body.dark-active &{
-//         color: c.$blue-100;
-//     }
-//     }
-//     .card-perfil-info{
-//         padding: 1.5625em;
-//     }
-// }
-
 .card-perfil-photo{
     width: 18.75em;
     height: 18.75em;
     border-radius: 50%;
-    @media (max-width:1126px){
-        // width: 60%;
+    @media (max-width:940px){
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width:767px){
+        width: 18.75em;
         height: auto;
     }
     // @media (max-width:767px){
@@ -218,7 +201,6 @@ header{
         
     // }
 }
-
 
 .img-opacity{
     position: relative;
@@ -246,14 +228,6 @@ header{
 .leatter-visble{
     position: relative;
 }
-
-// .section-100vh{
-//     width: 100%;
-//     height: 100vh;
-//     @media (max-width:765px) {
-//         height: auto;
-//     }
-// }
 .section-items-center{
     display: flex;
     align-items: center;
