@@ -14,8 +14,7 @@
 .bubble{
     border-radius: 50%;
     background: c.$blue-100;
-    opacity: .3;
-
+    opacity: .9;
     position: absolute;
     bottom: -150;
     
@@ -28,44 +27,45 @@
     animation-duration: $duration;
     animation-delay: $delay;
 }
+
 .bubble:nth-child(1){
-    @include bubbless(80px,80px ,5% ,3s ,3s );
+    @include bubbless(5em,5em ,5% ,3s ,3s );
 }
 
 .bubble:nth-child(2){
-    @include bubbless(100px,100px ,35% ,3s ,5s );
+    @include bubbless(6.25em,6.25em ,35% ,3s ,5s );
 }
 
 .bubble:nth-child(3){
-    @include bubbless(20px,20px ,15% ,1.5s ,7s );
+    @include bubbless(1.25em,1.25em ,15% ,1.5s ,7s );
 }
 
 .bubble:nth-child(4){
-    @include bubbless(50px,50px ,90% ,6s ,3s );
+    @include bubbless(3.125em,3.125em ,90% ,6s ,3s );
 }
 
 .bubble:nth-child(5){
-    @include bubbless(70px,70px ,65% ,3s ,1s );
+    @include bubbless(4.375em,4.375em ,65% ,3s ,1s );
 }
 
 .bubble:nth-child(6){
-    @include bubbless(20px,20px ,50% ,4s ,5s );
+    @include bubbless(1.25em,1.25em ,50% ,4s ,5s );
 }
 
 .bubble:nth-child(7){
-    @include bubbless(20px,20px ,50% ,4s ,5s );
+    @include bubbless(1.25em,1.25em ,50% ,4s ,5s );
 }
 
 .bubble:nth-child(8){
-    @include bubbless(100px,100px ,52% ,5s ,5s );
+    @include bubbless(6.25em,6.25em ,52% ,5s ,5s );
 }
 
 .bubble:nth-child(9){
-    @include bubbless(65px,65px ,51% ,3s ,2s );
+    @include bubbless(4.0625em,4.0625em ,51% ,3s ,2s );
 }
 
 .bubble:nth-child(10){
-    @include bubbless(40px,40px ,35% ,3s ,4s );
+    @include bubbless(2.5em,2.5em ,35% ,3s ,4s );
 }
 
 
@@ -75,13 +75,13 @@
         opacity: 0;
     }
     30%{
-        transform: translateX(30px);
+        transform: translateX(1.875em);
     }
     50%{
         opacity: .4;
     }
     100%{
-        bottom: 100vh;
+        bottom: 100%;
         opacity: 0;
     }
 }
