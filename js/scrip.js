@@ -32,19 +32,19 @@ document.getElementById('dark-mode').addEventListener('click', () => {
 })
 
 // type.js
-const typed = new Typed('.typed', {
-    strings: ['Developer Web',' Designer Web','or..','waiit!','aa yeaa','Front end','yes'],
-    typeSpeed: 80,
-    startDelay: 300,
-	backSpeed: 75, 
-	shuffle: false,
-	backDelay: 1500,
-	loop: true, 
-	loopCount: false,
-	showCursor: true,
-	cursorChar: '|', 
-    contentType: 'html',
-})
+// const typed = new Typed('.typed', {
+//     strings: ['Developer Web',' Designer Web','or..','waiit!','aa yeaa','Front end','yes'],
+//     typeSpeed: 80,
+//     startDelay: 300,
+// 	backSpeed: 75, 
+// 	shuffle: false,
+// 	backDelay: 1500,
+// 	loop: true, 
+// 	loopCount: false,
+// 	showCursor: true,
+// 	cursorChar: '|', 
+//     contentType: 'html',
+// })
 
 
 

@@ -36,13 +36,13 @@
 .icon-social{
     color: c.$grey-100;
     &:first-child(1){
-        color:c.$faceboock ;
+         background-color:c.$faceboock ;
     }
     &:first-child(2){
-        color:c.$twitter;
+        background-color:c.$twitter;
     }
     &:first-child(3){
-        color:c.$linkendi;
+        background-color:c.$linkendi;
     }
     &:first-child(4){
         color:c.$twitter;
