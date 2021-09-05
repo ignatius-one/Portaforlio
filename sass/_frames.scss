@@ -85,6 +85,7 @@
 }
 
 @mixin new-btn($colorb) {
+    outline: none;
     margin-top: 50px;
     width: 11.875em;
     padding: .9em;
