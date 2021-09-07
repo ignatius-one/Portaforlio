@@ -7,7 +7,7 @@
     <meta name="description" content="Hi there ">
     <meta name="theme-color" content="#054fe6">
     
-    
+
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- AOS  -->
@@ -37,7 +37,7 @@
         <a  href="#aboutMe">About Me</a>
         <a  href="#projects">Projects</a>
         <a  href="#Certificates">Certificates</a>
-        <a  href="#page3 Me">Contact Me</a>
+        <a  href="#contact">Contact Me</a>
     </div>
     <div class="bars" id="changes-icon"></div>
 </nav>
@@ -121,10 +121,8 @@
          </div>
       </div>
 
-      <!-- enctype="text/plain" action="mailto:josegnacio118@gmail.com " method="POST" -->
-      <form >
-        <button   class="btn-submit" >Send Email</button>
-      </form>
+    
+        <a href="#contact" class="btn-submit" >Send Email</a>
           
     </div>
     <div class="col-sm-12 col-md-7 ">
@@ -236,7 +234,7 @@
 </section> 
 
 
-<section id="projects">
+<section id="projects"  data-aos="zoom-out-up">
 <div class="container-fluid">
   
 <button class="tablink" onclick="openPage('page1')" id="defaultOpen">Project 1</button>
@@ -249,7 +247,7 @@
 <div class="overlay">
   <div class="row">
     <div class="col">
-      <h2>Lore</h2>
+    
     </div>
   <div class="col"></div>
   </div>
@@ -271,6 +269,28 @@
 </div>
 </section>
 
+<section data-aos="fade-down-right" id="contact" class="container mt-5">
+<h2>Contact</h2>
+  <form action="https://formsubmit.co/itorrezhdz@gmail.com" method="POST">
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<div>
+  <input class="btn-submit-contact" type="submit" value="Submit">
+</div>
+</form>
+
+</section>
+
+<footer>
+
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- libary AOS    -->

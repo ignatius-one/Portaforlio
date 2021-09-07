@@ -87,6 +87,7 @@
 @mixin new-btn($colorb) {
     text-decoration: none;
     outline: none;
+    text-align: center;
     margin-top: 50px;
     width: 11.875em;
     padding: .9em;
@@ -143,6 +144,20 @@
 
 .btn-submit{
     @include new-btn(c.$ligth-100)
+}
+.btn-submit-contact{
+    background-color: c.$blue-100;
+    color: c.$ligth-100;
+    outline: none;
+    border: none;
+    border:1px solid c.$ligth-100;
+    border-radius: 15px;
+    padding: 10px;
+    transition:.6s ease ;
+    &:hover{
+        opacity: .8;
+        transform: scale(1.1)
+    }
 }
 .btn-view{
     @include new-btn(c.$blue-100);
