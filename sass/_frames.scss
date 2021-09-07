@@ -143,7 +143,8 @@
 }
 
 .btn-submit{
-    @include new-btn(c.$ligth-100)
+    margin: .75em;
+    @include new-btn(c.$ligth-100);
 }
 .btn-submit-contact{
     background-color: c.$blue-100;
@@ -160,6 +161,7 @@
     }
 }
 .btn-view{
+    
     @include new-btn(c.$blue-100);
     text-transform: lowercase;
     padding: 7px;
@@ -181,5 +183,9 @@
 .border-skills{
   border-radius: .9375em;
 }
-
+.leatter-sub{
+    padding: 0;
+    display: inline;
+    border-bottom: 4px solid rgb(c.$blue-100,.3);
+}
 
