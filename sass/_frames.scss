@@ -34,18 +34,9 @@
 
 // icons social media 
 .icon-social{
-    color: c.$grey-100;
-    &:first-child(1){
-         background-color:c.$faceboock ;
-    }
-    &:first-child(2){
-        background-color:c.$twitter;
-    }
-    &:first-child(3){
-        background-color:c.$linkendi;
-    }
-    &:first-child(4){
-        color:c.$twitter;
+    color: c.$ligth-100;
+    &:hover{
+        color: c.$ligth-100;
     }
 }
 

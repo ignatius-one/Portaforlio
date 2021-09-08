@@ -31,14 +31,3 @@ document.getElementById('dark-mode').addEventListener('click', () => {
     document.getElementById('dark-mode').classList.toggle('change')
 })
 
-
-// function openPage(pageName) {
-//   // Hide all elements with class="tabcontent" by default */
-//   let i, tabcontent;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   document.getElementById(pageName).style.display = "block";
-// }
-// document.getElementById("defaultOpen").click();
